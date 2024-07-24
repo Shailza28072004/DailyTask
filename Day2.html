@@ -3,9 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Elements</title>
+    <style>
+    p{
+        font-size: 20px;
+    }
+    h1{
+        text-align:center;
+    }
+    #div1{
+        height: 100px;
+        width: 350px;
+        position :"relative";
+        float: right;
+        flex-direction: row;
+        border: 1px solid black;
+    }
+    aside {
+    width: 200px;
+    height:250px;
+    padding-left: 13px;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+    background-color: lightgray;
+  }
+  
+    </style>
 </head>
 <body>
-    
+    <main>
+      <header>
+         <h1>We will learn about Sementic elements</h1>
+      </header>
+      <hr>
+      <p>The main Tag is used to define the content main content</p>
+     
+      <div id="div1">
+        <p>The figure tag is used here to encapsulate the image and its caption and the caption is given here with the help of figcaption tag</p>
+     </div>
+      <figure>
+        <img src="C:\Users\Dell\Desktop\task1\DailyTask\assets\html.jpg" alt="html" style="width:40%">
+        <figcaption>Image</figcaption>
+      </figure>
+      <hr>
+      <article>
+        <h2>Article Tag</h2>
+        <p>The article tag provides the summery related to our website</p>
+      </article>
+      <article id="article"> 
+         <p>The span tag is an <span style="border: 1px solid black">inline Elements which only takes </span>the required width</p>
+      </article>
+      <hr>
+      <section>
+        <h2>Section Tag</h2>
+        <p>The section tag is define between the header and the footer.Section tag defines the section of documents </p>
+      </section>
+      <hr>
+      <aside>
+        <p>This is a <b>ad</b>.we will display it using the aside tag</p>
+      </aside>
+      <h2>Pre tag</h2>
+      <p>Pre tag called the pre formatted tag</p>
+      <pre id="pre">
+        #include <stdio.h>
+            int main() {    
+            
+                <var> number1, number2, sum;</var>
+                
+                printf("Enter two integers: ");
+                scanf("%d %d", &number1, &number2);
+            
+                // calculate the sum
+                sum = number1 + number2;      
+                
+                printf("%d + %d = %d", number1, number2, sum);
+                return 0;
+            }
+            <b>Output:</b>
+            Enter the two integers:12 12
+            num1+num2=24
+      </pre>
+    </main>
+     <hr>
+    <footer>
+        <h2>Footer tag</h2>
+        <p>Tag defines a footer for a document or section.The footer is at the end of the document </p>
+    </footer> 
 </body>
 </html>
