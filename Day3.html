@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+     .form {
+        width: 300px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #202020;
+        border-radius: 5px;
+        font-family: Arial, sans-serif;
+     }
+     input[type="submit"]:hover {
+      background-color: #4595a0;
+     }
+     select {
+     width: 100%;
+     padding: 8px;
+     font-size: 16px;
+    }
+    </style>
+  </head>
+  <body>
+    <form>
+      <div class="form">
+      <h1>Forms</h1>
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" value="" /><br /><br>
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname" value="" /><br /><br />
+      <label for="Subjects">Subjects:</label>
+      <select id="Sub">
+        <option value="BCA">BCA</option>
+        <option value="BBA">BBA</option>
+        <option value="B.Tech">b.Tech</option>
+        <option value="Bsc">Bsc</option>
+      </select><br><br>
+      <label for="sub">Subjects:</label><br>
+       <input type="radio" id="html"  value="HTML">
+       <label for="html">HTML</label><br>
+       <input type="radio" id="css"  value="CSS">
+       <label for="css">CSS</label><br>
+       <input type="radio" id="javascript"  value="JavaScript">
+       <label for="javascript">JavaScript</label><br><br>
+           
+      <label for="qualifications">Qualifications:</label><br>
+      <input type="checkbox" id="one"  value="Done 10th">
+      <label for="one">Done 10th</label><br>
+      <input type="checkbox" id="two" value="Done 12th">
+      <label for="two">Done 12th</label><br>
+      <input type="checkbox" id="three" value="Graduate">
+      <label for="three">Done Graduation</label><br>
+      <input type="checkbox" id="four" value="Graduate1">
+      <label for="four">Doing Graduation</label><br><br>
+      <input type="submit" value="Submit" />
+  </form>
+  </div>
+  </body>
+</html>
