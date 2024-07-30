@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists</title>
+    <style>
+        body{
+            font-size: 20px;
+        }
+        #heading{
+            text-align: center;
+        }
+        #list{
+            display: flex;
+            justify-content:space-evenly ;
+        }
+        #list2{
+            list-style-image: url(assests/square.png); 
+            list-style-position: inside;
+            /* background-size: 5px 5px 5px 5px; */
+             /* line-height: 0.5; */
+        }
+    </style>
+</head>
+<body>
+    <Section>
+        <h1 id="heading">Nested Lists</h1>
+        <hr>
+        <p>Lists can be nested (list inside list):</p>
+        <ol>
+            <li>Subjects</li>
+            <ul>
+                <li>Web Development</li>
+                <ol type="A">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ol>
+                <li>Library</li>
+                <ol type="A">
+                    <li>React</li>
+                    <li>Anagular</li>
+                </ol>
+            </ul>
+            <li>Languages</li>
+            <ul>
+                <li>Basics</li>
+                <ol type="i">
+                    <li>C++</li>
+                    <li>C</li>
+                </ol>
+                <li>Databases</li>
+                <ol type="i">
+                    <li>My SQL</li>
+                    <li>Oracle</li>
+                </ol>
+            </ul>
+            <li>Spoken</li>
+            <ul>
+                <li>Languages</li>
+                <ol type="I">
+                    <li>English</li>
+                    <li>Hindi</li>
+                </ol>
+                <li>Skills</li>
+                <ol type="I">
+                    <li>Technical</li>
+                    <li>Spoken</li>
+                </ol>
+            </ul>
+            <li>Students</li>
+            <ul>
+                <li>Name</li>
+                <ol type="A">
+                    <li>John</li>
+                    <li>Johnson</li>
+                </ol>
+                <li>Class</li>
+                <ol type="A">
+                    <li>BCA</li>
+                    <li>Sem 5th</li>
+                </ol>
+            </ul>
+            <li>Subjects</li>
+            <ul>
+                <li>Java</li>
+                <ol type="A" start="6">
+                    <li>learned</li>
+                    <li>class Bca</li>
+                </ol>
+                <li>Networking</li>
+                <ol type="A" start="9">
+                    <li>Learning</li>
+                    <li>Class Bca</li>
+                </ol>
+            </ul>
+        </ol>
+    </Section>
+    <hr>
+    <section>
+        <h2>Moving the list items side by side</h2>
+        <P>here a simple list</P>
+        <ul id="list">
+            <li>Food</li>
+            <li>Drinks</li>
+            <li>Snaks</li>
+            <li>Salad</li>
+        </ul>
+    </section>
+    <hr>
+    <section >
+        <h2>Using a custom symbol image in place of bullets</h2>
+        <P>here a simple list</P>
+        <ul id="list2">
+            <li>Food</li>
+            <li>Drinks</li>
+            <li>Snaks</li>
+            <li>Salad</li>
+        </ul>
+    </section>
+</body>
+</html>

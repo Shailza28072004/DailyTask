@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Replica</title>
+    <style>
+        *{
+    border:border-box;
+    margin:0px;
+}
+.navbar{
+    font-family: arial;
+    background-color:black;
+    height:60px;
+    color:white;
+    display: flex;
+    align-items: center;
+}
+.nav-logo{
+    height: 50px;
+    width: 100px;
+}
+.border{
+    border: 2px solid transparent;
+}
+.border:hover{
+       border:2px solid white;
+}
+.logo{
+    background-image: url(amazon-logo.png);
+    background-size: cover;
+    height: 50px;
+    width:100%;
+}
+/*Box2 styling*/
+.p1{
+    color:white;
+    font-size:17px;
+}
+.p2{
+    font-size:18px;
+}
+/*box2*/
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    width:620px;
+    height:30px;
+    border-radius: 4px;
+    background-color:yellow;
+}
+.search-select{
+    background-color: rgb(216, 212, 212);
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border:none;
+}
+.search-input{
+    width:600px;
+    border:none;
+}
+.search-icon{
+    display:flex;
+    justify-content: center;
+    width:40px;
+    align-items: center;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color:black;
+}
+#sigin{
+    margin:10px;
+    color:white;
+    font-size: 15px;
+}
+#return{
+    margin:10px;
+    font-size: 14px;
+}
+.navbar2{
+    background-color: black;
+    color:white;
+    display: flex;
+}
+.p1{
+    margin-left:15px;
+    display:flex;
+}
+.image1{
+    height:200px;
+    background-image: url(amzon.jpg);
+    background-size: cover;
+}
+/* .prefer{
+    width:500px;
+    height:400px;
+    background-image: url(box2.jpg);
+} */
+ /* .main{
+    background-image: url(box2.jpg);
+ } */
+.maindiv{
+    margin: 10px;
+    display:flex;
+    flex-direction:row;
+    column-gap: 5vw;
+}
+#DivforImage{
+    background-image: url("box2.jpg");
+    background-size: cover;
+    background-color:black;
+    height:350px;
+}
+#airpods{
+    background-color: rgb(136, 135, 135);
+    color:rgb(36, 35, 35);
+    width:100%;
+    height:20px;
+    text-align: center;
+    font-family: arial;
+}
+#ImageBig{
+
+    border: 5px solid grey;
+    background-image: url("airpods.jpg");
+    background-size: cover;
+    height: 400px;
+}  
+.maindiv2{
+    margin: 10px;
+    display:flex;
+    flex-direction:row;
+    column-gap: 5vw;
+}
+#text{
+    background-color: white;
+    text-align: center;
+    color:black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* #image4{
+    background-image: url(box1.avif);
+    background-size: cover;
+} */
+.box1{
+    background-image: url(box1.avif);
+    background-size: cover;
+    width: 200px;
+    height:250px; 
+    border:10px solid white;
+}
+.box2{
+    background-image: url(box5.jpeg);
+    background-size: cover;
+    width: 200px;
+    height:250px;
+    float:right;
+    border:10px solid white;
+}
+#text2{
+        background-color: white;
+        text-align: center;
+        color:black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+     background-image: url(pink.jpg);
+    } 
+ .box3{
+    background-image: url(box6.avif);
+    background-size: cover;
+    width: 200px;
+    height:250px;
+    float:right;
+    border:10px solid white;
+}
+#text3{
+        background-color: white;
+        text-align: center;
+        color:black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.box4{
+    background-image: url(box7.avif);
+    background-size: cover;
+    width: 200px;
+    height:250px;
+    float:right;
+    border:10px solid white;
+}
+#text4{
+        background-color: white;
+        text-align: center;
+        color:black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.box5{
+    background-image: url(box8.avif);
+    background-size: cover;
+    width: 200px;
+    height:250px;
+    float:right;
+    border:10px solid white;
+}
+#text5{
+        background-color: white;
+        text-align: center;
+        color:black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.box6{
+    background-image: url(box10.jpg);
+    background-size: cover;
+    width: 200px;
+    height:250px;
+    float:right;
+    border:10px solid white;
+}
+#text6{
+        background-color: white;
+        text-align: center;
+        color:black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.box7{
+    background-image: url(black.jpg);
+    background-size: cover;
+    width: 200px;
+    height:250px;
+    float:right;
+    border:10px solid white;
+}
+#text7{
+        background-color: white;
+        text-align: center;
+        color:black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.box8{
+    background-image: url(outfit.jpg);
+    background-size: cover;
+    width: 200px;
+    height:250px;
+    float:right;
+    border:10px solid white;
+}
+#text8{
+        background-color: white;
+        text-align: center;
+        color:black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#footer{
+    height:20px;
+    background-color: grey;
+    color:black;
+    text-align: center;
+}
+#grey{
+    background-image: url("grey.avif");
+    height:200px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 5vh;
+    text-align: center;
+    padding-left: 100px;
+}
+/* #gdiv1{
+
+}
+#gdiv2{
+display: flex;
+flex-direction: row;
+} */
+ #logo{
+    height: 100;
+    background-image: url("grey.avif");
+ }
+
+ aside {
+    width: 200px;
+    height:250px;
+    padding-left: 13px;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+    background-color: lightgray;
+  }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <main>
+     <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+            <div class="nav-address">
+                <P class="p1">deliver to</P>
+                <div class="address-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="p2">India</p>
+                </div>
+            </div>
+            <div class="nav-search">
+                <select class="search-select">
+                    <option>All</option>
+                    <input placeholder="Search for amazon" class="search-input">
+                    <div class="search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </select>
+            </div>
+            <div id="sigin">
+                <p>Hello,sign<br>
+                    <b>Accounts & Lists</b>
+                 </p>
+            </div>
+            <div id="return">
+                <p>Returns <br><B>& orders</B></p>
+            </div>
+            <div id="icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+        <div class="navbar2">
+          <div id="icon3">
+            <i class="fa-solid fa-bars"></i>
+          </div>  
+          <p>All</p>
+          <P class="p1">Amazon miniTV</P>
+          <p class="p1">sell</p>
+          <p class="p1">Best sellers</p>
+          <p class="p1">Mobiles</p>
+          <p class="p1">Deals</p>
+          <p class="p1">customers service</p>
+          <p class="p1">Prime</p>
+          <p class="p1">Fashion</p>
+          <p class="p1">Electronics</p>
+        </div>
+      </header>
+      <section>
+        <article>
+          <div id="DivforImage"></div>
+            <div class="maindiv">
+              <div class="box1">
+                <div id="text"><p>Winters</p></div>
+                   <!-- <div id="image4"></div> -->
+                </div>
+               <div class="box2">
+                  <div id="text2"><p>Summers</p></div>
+                </div>
+                <div class="box3">
+                   <div id="text3"><p>Fab collection</p></div>
+                </div>
+                <div class="box4">
+                  <div id="text4"><p>Winter Coat</p></div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <aside>
+      <p>This is a <b>ad</b>.we will display it using the aside tag</p>
+    </aside>
+
+    <section>
+      <article>
+        <div class="maindiv2">
+        <div class="box5">
+            <div id="text5"><p>Denim</p></div>
+            <!-- <div id="image4"></div> -->
+        </div>
+        <div class="box6">
+            <div id="text6"><p>Denim Jackets</p></div>
+        </div>
+        <div class="box7">
+            <div id="text7"><p>Black is here</p></div>
+        </div>
+        <div class="box8">
+            <div id="text8"><p>outfit</p></div>
+        </div>
+        </div>
+      </article>
+    </section>
+    </div>
+    <section>
+        <article>
+    <div id="airpods">
+        <p><b>Airpods</b></p>
+    </div>
+     <div id="ImageBig"></div>
+       </article>
+    </section>
+   </main> 
+     <footer>
+        <div id="footer">
+            <p><i>Back to top</i></p>
+        </div>
+        <div id="grey">
+            <div id="gdiv1">
+            <b>Get to know us</b><br>
+            <p>About Amazon</p>
+            </div>
+            <div id="gdiv2">
+                <b>Make Money with Us</b>
+                    <p>Sell products on Amazon</p>
+                    <p>Sell on Amazon Business</p>
+            </div>
+            <div id="gdiv3">
+                <p><b>Amazon Payment Products</b><br>
+                    Amazon Business Card<br>
+                    Shop with Points<br>
+                    Reload Your Balance<br>
+                    Amazon Currency Converter</p>
+            </div>
+            <div id="gdiv4">
+                <p><b>Let Us Help You</b><br>
+                    Your Orders<br>
+                    Shipping Rates<br>
+                    Returns & Replacements<br>
+                    Manage Your Content and Devices
+                    Help</p>
+            </div>
+        </div>
+        <hr>
+     </footer>
+</body>
+</html>
