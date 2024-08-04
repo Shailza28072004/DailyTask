@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #div1{
+        width: 100%;
+        background-color: rgb(199, 253, 235);
+      }
+      #div2{
+        width: 100%;
+        background-color: rgb(226, 100, 110);
+      }
+      body{
+        background-color: antiquewhite;
+        padding: 0;
+        margin: 0;
+        font-size: 20px;
+      }
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+      #first{
+        width: 400px;
+        height: 300px;
+        background-color: black;
+        background-image: url(assests/htmls.jpg);
+        background-size: cover;
+        border: 5px solid black;
+      }
+      #second{
+        width: 400px;
+        height: 300px;
+        background-color: black;
+        background-image: url(assests/html2.jpg);
+        background-size: cover;
+        border: 5px solid black;
+      }
+      #third{
+        width: 400px;
+        height: 300px;
+        background-color: black;
+        background-image: url(assests/html1.jpg);
+        background-size: cover;
+        border: 5px solid black;
+      }
+      #maindiv{
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .container {
+      display: flex;
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+      height: 200px; 
+    }
+    .container img {
+      max-height: 100%; 
+      max-width: 100%;
+    }
+    </style>
+  </head>
+  <div>
+    <header>
+      <h1 align="center">To center an image</h1>
+    </header>
+    <hr>
+    <section>
+      <img src="assests/image2.png" alt="images" style="width: 50%" height="300" title="Nature">
+      <p align="center">Here we have used the margins to set the image</p>
+    </section>
+    <hr>
+    <div id="div1">
+    <h2 align="center">Centered Image</h2>
+    <div class="container">
+      <img src="assests/image1.png" alt="Centered Image" title="Nature">
+    </div>
+    <p align="center">here we have used another way to center the image by using align items and justify content</p>
+    <hr>
+    <div id="div2">
+     <h3 align="center">Centering Imges</h3>
+  <div style="display: grid; place-items: center;">
+    <img src="assests/image1.png" alt="Centered Image" width="200" height="200">
+  </div>
+    <P align="center">Using grids we can also center the images like here we have done this by the use of grids</P>
+    <hr>
+  </div>
+  <b>Here we have only discussed about that how to center the image</b>
+  <h4><u>Attributes of image tags</u></h4>
+  <P><i>lets discuss about the Attributes of image tag</i></P>
+ <ol>
+  <li>src</li>
+  <ul type="none">
+    <li>The src means the <b>Source attribute</b> this is used to provide the path of the image</li>
+  </ul>
+  <li>alt</li>
+  <ul type="none">
+    <li>The at means the <b>Alternate text</b>this text is diaplay when the is not seen on page</li>
+  </ul>
+  <li>title</li>
+  <ul type="none">
+    <li>The title attribue is used to provide a title, when we move the mouse over the image we see the title this may be called as the <B>screentip</B></li>
+  </ul>
+  <li>align</li>
+  <ul type="none">
+    <li>this is used to provide the alignment , in this we can onlt provide the left and right alignment</li>
+  </ul>
+  <li>width</li>
+  <ul type="none">
+    <li>The <B>width attribue is used to provide the width of the image</B></li>
+  </ul>
+  <li>Height</li>
+  <ul type="none">
+    <li>This attribute is used to provide the height to the image</li>
+  </ul>
+  <li>Border</li>
+  <ul type="none">
+    <li>The <b>Border Attribute</b> is used to provide the border to the image, The color of the border remaons black in <i>HTML</i> we can't change the color of the border in HTML</li>
+  </ul>
+  <li>Hspace</li>
+  <ul type="none">
+    <li>This attribute is used to provide the horizontal spacing to image</li>
+  </ul>
+  <li>Vspace</li>
+  <ul type="none">
+    <li>This attribute is used to provide the verticall spacing to the image</li>
+  </ul>
+</ol>
+<article>
+  <h4>Inserting an image side by side</h4>
+  <div id="maindiv">
+  <div id="first">
+  </div>
+  <div id="second">
+  </div>
+  <div id="third">
+  </div>
+ </div>
+ <hr>
+ </article>
+<footer>
+  <p>Here in this page we have just discussed about how to ceneter the image and some of its attributes</p>
+</footer>
+  </body>
+</html>
