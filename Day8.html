@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <style>
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+    }
+    h2 {
+      text-align: center;
+      color: #3d3d3d;
+    }
+    label {
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #555;
+    }
+    input[type="text"],
+    input[type="date"],
+    input[type="tel"],
+    input[type="email"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 8px;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    select {
+      width: 80%;
+      padding: 8px;
+      font-size: 16px;
+    }
+    body {
+      background-color: rgb(235, 233, 233);
+    }
+  </style>
+  <body>
+    <header>
+      <h1>Forms</h1>
+      <p>Making a practice form</p>
+    </header>
+    <form>
+      <h2>Form</h2>
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" value="" /><br /><br />
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname" value="" /><br /><br />
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required /><br /><br />
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" required></textarea><br /><br />
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">Select Gender</option>
+        <optgroup label="Gender Identity">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </optgroup></select
+      ><br /><br />
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required /><br /><br />
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <label for="grade">Grade Applying For:</label>
+      <select id="grade" name="grade" required>
+        <option value="">Select Grade</option>
+        <optgroup label="Primary">
+          <option value="1">Grade 1</option>
+          <option value="2">Grade 2</option>
+          <option value="3">Grade 3</option>
+          <option value="4">Grade 4</option>
+          <option value="5">Grade 5</option>
+          <option value="6">Grade 6</option>
+        </optgroup>
+        <optgroup label="Secondary">
+          <option value="7">Grade 7</option>
+          <option value="8">Grade 8</option>
+          <option value="9">Grade 9</option>
+          <option value="10">Grade 10</option>
+          <option value="11">Grade 11</option>
+          <option value="12">Grade 12</option>
+        </optgroup></select
+      ><br /><br />
+
+      <label for="sub">Subjects:</label><br />
+      <input type="radio" id="html" value="HTML" />
+      <label for="html">HTML</label><br />
+      <input type="radio" id="css" value="CSS" />
+      <label for="css">CSS</label><br />
+      <input type="radio" id="javascript" value="JavaScript" />
+      <label for="javascript">JavaScript</label><br /><br />
+
+      <label for="qualifications">Qualifications:</label><br />
+      <input type="checkbox" id="one" value="Done 10th" />
+      <label for="one">Done 10th</label><br />
+      <input type="checkbox" id="two" value="Done 12th" />
+      <label for="two">Done 12th</label><br />
+      <input type="checkbox" id="three" value="Graduate" />
+      <label for="three">Done Graduation</label><br />
+      <input type="checkbox" id="four" value="Graduate1" />
+      <label for="four">Doing Graduation</label><br /><br />
+      <input type="checkbox" id="four" value="Graduate1" />
+      <label for="four">Post Graduation</label><br /><br />
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
