@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<style>
+  td{
+    text-align: center;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(177, 171, 171);
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  #one{
+    text-align: center;
+    text-decoration:underline;
+    text-shadow: 2px 2px 4px #555252;
+  }
+  .bold{
+    text-shadow: 2px 2px 4px #202020;;
+  color: rgb(56, 56, 56);
+    font-size:30px;
+  }
+  #divs{
+    width: 100%;
+    height: 200px;
+    background-color: gainsboro;
+  }
+</style>
+<body>
+  <header>
+    <h1 id="one">Tables in HTML</h1>
+  </header>
+  <hr>
+  <main>
+    <p>The following are the some examples of tables that we have created</p>
+    <table rules="all" frame="box" width="20%">
+        <tr>
+            <th rowspan="2"></th>
+            <th colspan="2">Average</th>
+            <th rowspan="2">Red<br>eyes</th>
+          </tr>
+          <tr>
+            <th>height</th>
+            <th>weight</th>
+          </tr>
+          <tr>
+            <th>Males</th>
+            <td>1.9</td>
+            <td>0.003</td>
+            <td>40%</td>
+          </tr>
+          <tr>
+            <th>Females</th>
+            <td>1.7</td>
+            <td>0.002</td>
+            <td>43%</td>
+          </tr>
+    </table>
+  </main>
+
+  <article>
+    <p>By clicking on the below given link you can move usong the interadocument links</p>
+    <ul>
+      <li><a href="#Intradocument">Move to Intradocument</a></li>
+    </ul>
+    <hr>
+    <b  class="bold"><u>What are Links?</u></b>
+    <P>link is a clickable text image or the graphic that navigate user to any spefic location when clicked</P>
+   
+    <b class="bold"><u>What are hyperlinks?</u></b>
+    <p>The <b>hyperlink</b> is a clickable text,graphic,or image that navigate over a specified HTTP</p>
+    <p>Navigation means to move from one place to another</p>
+    <b><i>Types of links in HTML-></i></b>
+    <p>There are two types of links in <i>HTML</i></p>
+    <ol type="none">
+      <li>Intradocument links</li>
+      <ul type="none">
+        <li>The <i><b>Intradocument links</b></i> are used to move within webpage</li>
+      </ul>
+      <li>Interdocument links</li>
+      <ul type="none">
+        <li>The <i><b>Interdocument links</b></i> are used to move from one webpage to another</li>
+      </ul>
+    </ol>
+  </article>
+<hr>
+  <article>
+    <h2><u>Anchor Tag</u></h2>
+    <p>The anchor tag is used to create the <b>hyperlinks</b> in HTML</p>
+    <h3><u>How to make an Interdocument hyperlinks?</u></h3>
+    <p>We can achieve this or you can say that we can make a Intradocument hyperlink by using the anchor tag</p>
+    <div id="Intradocument">
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi exercitationem cumque asperiores dolor rerum ea quaerat magnam, quasi vero error eos non laboriosam qui distinctio doloremque natus inventore delectus saepe? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum ab eum error sit aliquid culpa blanditiis atque, inventore cum praesentium fugit, modi eos mollitia deserunt officia harum perspiciatis ad exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam illo quasi incidunt rerum nam voluptatibus, vitae eaque iusto assumenda quisquam cupiditate ipsum necessitatibus fugiat, perspiciatis quis laboriosam tempora atque nesciunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nisi culpa deserunt, alias doloremque sunt assumenda fuga necessitatibus atque aspernatur natus nihil commodi, quam facere iure ratione odit quasi a!</p>
+    </div>
+    <div id="paragraph">
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius cumque consequatur, reiciendis ipsam, maiores consectetur facere nemo at sit ratione, libero ab porro sequi similique fuga quisquam deleniti! Voluptates, aliquid? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, exercitationem molestias. Totam illo nesciunt perferendis non consequatur odio quidem omnis velit, eligendi consequuntur repellat modi dicta ullam ea nobis quo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id odit blanditiis ab error suscipit corrupti, atque reiciendis molestiae adipisci ipsa porro! Ipsum perspiciatis corporis tempore cupiditate laboriosam doloremque corrupti modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dicta deserunt adipisci nesciunt ad quidem cupiditate corporis libero repellendus corrupti voluptatum voluptates fugiat sapiente veniam eligendi vero, cum eius voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ea dolorem, consectetur, magnam provident, suscipit debitis quam culpa eum nisi cumque in harum possimus dignissimos sit fuga illo totam deserunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aspernatur dolores mollitia illo totam repellat culpa, similique eligendi fugit corrupti omnis rerum aliquam beatae cum officiis praesentium consectetur natus sint. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nam nisi doloremque eos iusto explicabo, commodi beatae dolores! Dolore fugiat dolor itaque quod saepe, et delectus quidem fuga vero beatae!</p>
+    </div>
+    <hr>
+    <div id="Interdocument">
+      <h4><u>How to make Interdocument hyperlinks?</u></h4>
+      <p>By using the Interdocument hyperlinks we can move from one webpage to another</p>
+      <a href="EgZjaHJvbWUyBggAEEUYOTIGCAEQRRhAMhUIAhAuGAoYgwEYxwEYsQMY0QMYgAQyDwgDEAAYChiDARixAxiABDIMCAQQABgKGLEDGIAEMgkIBRAAGAoYgAQyBggGEEUYPDIGCAcQBRhA0gEIMjgyN2owajeoAgCwAgA">Move to Google</a>
+      <p>By clicking on this link you will move to goolge website</p>
+    </div>
+  </article>
+<hr>
+    <b class="bold"><u>Making Image a link?</u></b>
+    <P>When we click on image it will act as an link.The below given image is an link <i>Try by clicking on the image</i>to move to another webpage</P>
+    <a href="https://www.tutorialspoint.com/html/index.htm"><img src="assests/HTML-tutorial.jpg" alt="HTML tutorial" style="width:400px;height:300px;"></a>
+  <hr> 
+  <div id="divs">
+    <h4><u>How to open link in another tab?</u></h4>
+    <p>To open the link  in another tab we need to use the <b>Target Attribute</b>by using the target attribute a sblank you will move to a new  tab</p>
+    <p>Click on the below given link it will tak you on a new tab</p>
+    <a href="https://leetcode.com/" target="_blank">Leet Code</a>
+  </div> 
+  </body>
+</html>
