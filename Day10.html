@@ -64,8 +64,12 @@
       }
 
       function Decreament() {
-        counterValue--;
-        value.textContent = counterValue;
+        if (counterValue > 0) { // Prevent decrementing below zero
+                counterValue--;
+                value.textContent = counterValue;
+            }
+        // counterValue--;
+        // value.textContent = counterValue;
       }
     </script>
   </body>
