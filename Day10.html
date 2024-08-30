@@ -59,8 +59,10 @@
       let counterValue = 0;
       let value = document.getElementById("count");
       function Increament() {
-        counterValue++;
-        value.textContent = counterValue;
+        if(counterValue<50){  //Prevent increamenting above 50
+          counterValue++;
+          value.textContent = counterValue;
+        }
       }
 
       function Decreament() {
