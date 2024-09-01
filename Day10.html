@@ -49,15 +49,23 @@
   <body>
     <div id="one">
       <div id="parent">
+        <button onclick="Reset()">Reset</button>
         <button onclick="Increament()">Increament</button>
         <div>Counter:<span id="count">0</span></div>
         <button onclick="Decreament()">Decreament</button>
+        <button onclick="Maximum()">Maximum</button>
       </div>
     </div>
 
     <script>
       let counterValue = 0;
       let value = document.getElementById("count");
+      
+      function Reset(){
+        counterValue = 0;
+        value.textContent = counterValue;
+      }
+
       function Increament() {
         if(counterValue<50){  //Prevent increamenting above 50
           counterValue++;
@@ -72,6 +80,11 @@
             }
         // counterValue--;
         // value.textContent = counterValue;
+      }
+
+      function Maximum(){
+        counterValue=50;
+        value.textContent = counterValue;
       }
     </script>
   </body>
