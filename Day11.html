@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods</title>
+</head>
+<style>
+    body{
+        background-color: #E9EFEC;
+        font-size: 20px;
+    }
+    #heading1{
+        color: #6A9C89;
+    }
+</style>
+<body>
+    <h1 id="heading1">String Methods</h1>
+    <p>We are discusiing about the various string methods in JavaScript</p>
+    <list>
+        <ol type="1">
+            <li><b>charAt()</b>
+                <ul type="none">
+                    <li>The charAt() method returns the character at a specified index (position)</li>
+                </ul>
+            </li>
+            <li><b>indexOf()</b>
+                <ul type="none">
+                    <li>Returns the index of the first occurrence of searchValue in the string. Returns -1 if searchValue is not found.</li>
+                </ul>
+            </li>
+            <li><b>lastIndexOf()</b>
+                <ul type="none">
+                    <li>Returns the index of the last occurrence of searchValue in the string. Returns -1 if searchValue is not found.
+                    </li>
+                </ul>
+            </li>
+            <li><b>trim()</b>
+                <ul type="none">
+                    <li>Removes whitespace from both ends of a string and returns a new string. It does not affect whitespace within the string.</li>
+                </ul>
+            </li>
+            <li><b>substring()</b>
+                <ul type="none">
+                    <li>Returns a part of the string between start and end indices. The start index is inclusive, while the end index is exclusive.</li>
+                </ul>
+            </li>
+            <li><b>Split()</b>
+                <ul type="none">
+                    <li>Splits a string into an array of substrings based on a specified separator.</li>
+                </ul>
+            </li>
+            <li><b>slice</b>
+                <ul type="none">
+                    <li>Extracts a section of the string and returns it as a new string, without modifying the original string. The start index is inclusive, and the end index is exclusive.</li>
+                </ul>
+            </li>
+        </ol>
+    </list>
+    <script>
+        //charAt()
+        let str="Hello Javascript";
+        console.log(`The string one is ${str}`);
+        console.log(`The character at index 4 is ${str.charAt(4)}`);
+
+        //indexOf()
+        let newStr = 'coding language';
+        console.log(`The string is ${newStr} and the index of 'g' is ${newStr.indexOf('g')}`);
+
+        //lastIndexOf()
+         let text="Hello";
+         console.log(`The string is ${text} and by using lastIndexOf we get the index of l=${text.lastIndexOf('l')}`);
+        //trim()
+        let texts="     JS      ";
+        console.log(`The string is ${texts} and after trim() we get ${texts.trim()}`);
+
+        //substring()
+        let substr="Using string Methods";
+        console.log(`the string is =${substr} and after using the sub string function we get the string as=${substr.substring(3,5)}`);
+
+        //split()
+        let splits="New String is here";
+        console.log(`The string= ${splits} and after split() we get ${splits.split(" ")}`);
+</script>
+</body>
+</html>

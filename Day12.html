@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        body {
+            background-color: #EEDF7A;
+        }
+        .table {
+            width: 500px; 
+            height: 500px; 
+            border-collapse: collapse;
+            margin: 20px auto; 
+        }
+        .table td {
+            width: 100px; 
+            height: 100px; 
+            background-color: #f0f0f0; 
+            border: 2px solid #343131; 
+        }
+        h1 {
+            text-align: center;
+            color: #A04747;
+        }
+        .buttons{
+            text-align: center;
+        }
+        button {
+            font-size: 20px;
+            text-align: center;
+            width: 80px;
+            height: 60px;
+            background-color: #A04747;
+            color: wheat;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        button:hover {
+            color: #78B7D0;
+            background-color: #16325B;
+        }
+    </style>
+</head>
+<body>
+    <h1>Learning about JavaScript</h1>
+    <table class="table" id="colorTable">
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="buttons">
+    <button id="colorButton">Change Color</button>
+</div>
+    <script>
+        document.getElementById('colorButton').addEventListener('click', () => {
+            // Get all the table cells
+            const cells = document.querySelectorAll('#colorTable td');
+            // Loop through each cell and change its background color
+            cells.forEach(cell => {
+                cell.style.backgroundColor = 'red';
+            });
+        });
+    </script>
+</body>
+</html>
