@@ -87,14 +87,23 @@
     </table>
     <div class="buttons">
     <button id="colorButton">Change Color</button>
+    <button id="reset">Reset Color</button>
 </div>
     <script>
         document.getElementById('colorButton').addEventListener('click', () => {
             // Get all the table cells
             const cells = document.querySelectorAll('#colorTable td');
-            // Loop through each cell and change its background color
+            // Loop through each cell and change its background color to red 
             cells.forEach(cell => {
                 cell.style.backgroundColor = 'red';
+            });
+        });
+
+         // For reset button
+         document.getElementById('reset').addEventListener('click', () => {
+            const cells = document.querySelectorAll('#colorTable td'); 
+            cells.forEach(cell => {
+                cell.style.backgroundColor = '#f0f0f0';
             });
         });
     </script>
