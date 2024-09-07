@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statements</title>
+    <style>
+        body{
+            font-size: 20px;
+            font-family: Georgia;
+            background-color: #81807f;
+            color: #eff1eb;
+        }
+        #first{
+            text-align: center;
+            text-shadow:  2px 2px #545a49;;
+        }
+        #code{
+            background-color: #6e6b6b;
+            border: 1px solid #a5a2a2;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+    <h1 id="first">conditional Statements</h1>
+    <p>The conditional Statements are used when we want to perform some action on the basis of the condition. for example if somebody want to check that if a number is even or not then the Consitional Statements come into use</p>
+    <h2>In JavaScript we have the following statement to check for the conditions:</h2>
+    <ol>
+        <li>If statement</li>
+        <li>If-Else statement</li>
+        <li>If-else-if-else statement</li>
+        <li>Ternary Operators</li>
+        <li>Switch statement</li>
+    </ol>
+    <div id="code">
+    <b>Lets understand about the syntax of above Statements</b>
+    <code>
+        <pre>
+            1.If statement
+            The syntax of if statement is:
+              if(condition)
+              {
+                  //code
+              }
+
+            2.If-Else statement
+            The syntax of if statement is:
+              if(condition){
+                  //code
+              }
+              else{
+                //code
+              }
+
+              3.If-else-if-else statement
+              The syntax of if statement is:
+                if(condition){
+                    //code
+                }
+                else if(condition){
+                  //code
+                }
+                else{
+                    //code
+                }
+
+                4.Ternary Operators
+                  condition?works if condition is true:works if condition is false
+        </pre>
+    </code>
+    </div>
+</div>
+    <script>
+        //If statement checking for if a number is gretaer than 10 or not
+        let number=15;
+        if(number>10){
+            console.log("The number is greater then 10");
+        }
+        console.log("You are outside the if block");
+
+        //If-else statement check that if a number is even or odd
+        let num=8;
+        if(num%2==0){
+            console.log(`The number ${num} is a Even Number`);
+        }
+        else{
+            console.log(`The number ${num} is a Odd Numbe`);
+        }
+        console.log("You are outside the if block");
+
+        //if-if-else-else statement checking that if a candidate is eligible to vote or not
+        let age=18;
+        if(age==18){
+            console.log("The candidate can vote");
+        }
+        else if(age>18){
+            console.log("The candiadte can vote");
+        }
+        else{
+            console.log("The candidate is not vote");
+        }
+        console.log("You are outside the block");
+
+        //Ternary Operators----checking for the correction of number
+        let input=20;
+        let output= input>=20?"The number is correct":"The number is incorrect";
+        console.log(`The number ${input} is correct`);
+    </script>
+</body>
+</html>
