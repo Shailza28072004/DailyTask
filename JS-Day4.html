@@ -1,113 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conditional Statements</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
     <style>
-        body{
-            font-size: 20px;
-            font-family: Georgia;
-            background-color: #81807f;
-            color: #eff1eb;
-        }
-        #first{
-            text-align: center;
-            text-shadow:  2px 2px #545a49;;
-        }
-        #code{
-            background-color: #6e6b6b;
-            border: 1px solid #a5a2a2;
+          body {
+              font-family: Arial, sans-serif;
+              text-align: center;
+              background-color: #eee8e8;
+              margin: 0;
+              padding: 20px;
+          }
+          #heading1{
+            color: #229799;
+          }
+          p{
+            color: #424242;
+          }
+          b{
+              text-align: center;
+              font-size: 40px;
+          }
+          .welcome-section, .work-section {
+              display: none;
+              margin-top: 20px;
+              padding: 20px;
+              background-color: #cfcdcd;
+              border-radius: 8px;
+          }
+          button {
+              background-color: #229799;
+              color: #424242;
+              border: none;
+              padding: 10px 20px;
+              margin: 5px;
+              border-radius: 5px;
+              cursor: pointer;
+              font-size: 16px;
+          }
+          button:hover {
+              background-color:#CDC2A5;
+          }
+          button:hover {
+              background-color:#CDC2A5;
+          }
+          #div1,#div2,#div3{
+            width: 100%;
+            height: 500px;
+            background-size: cover;
             padding: 10px;
-            border-radius: 5px;
-        }
+            margin: 10px;
+            /* background-color: black; */
+          }
+          #div1{
+            background-image: url("assests/learnjs.jpg");
+          }
+          #div2{
+            background-image: url("assests/js.jpg");
+          }
+          #div3{
+            background-image: url("assests/techjs.jpeg");
+          }
     </style>
-</head>
-<body>
-    <div id="container">
-    <h1 id="first">conditional Statements</h1>
-    <p>The conditional Statements are used when we want to perform some action on the basis of the condition. for example if somebody want to check that if a number is even or not then the Consitional Statements come into use</p>
-    <h2>In JavaScript we have the following statement to check for the conditions:</h2>
-    <ol>
-        <li>If statement</li>
-        <li>If-Else statement</li>
-        <li>If-else-if-else statement</li>
-        <li>Ternary Operators</li>
-        <li>Switch statement</li>
-    </ol>
-    <div id="code">
-    <b>Lets understand about the syntax of above Statements</b>
-    <code>
-        <pre>
-            1.If statement
-            The syntax of if statement is:
-              if(condition)
-              {
-                  //code
-              }
-
-            2.If-Else statement
-            The syntax of if statement is:
-              if(condition){
-                  //code
-              }
-              else{
-                //code
-              }
-
-              3.If-else-if-else statement
-              The syntax of if statement is:
-                if(condition){
-                    //code
-                }
-                else if(condition){
-                  //code
-                }
-                else{
-                    //code
-                }
-
-                4.Ternary Operators
-                  condition?works if condition is true:works if condition is false
-        </pre>
-    </code>
+  </head>
+  <body>
+    <h1 id="heading1">Want to know about us?</h1>
+    <p>If yes, then the way is here, just click the below buttons</p>
+    <div>
+      <button id="showWelcome">Show Welcome</button>
+      <button id="showPictures">Show Our Work</button>
+      <button id="hideWelcome">Hide Welcome</button>
+      <button id="hidePictures">Hide Our Work</button>
     </div>
-</div>
+
+    <div class="welcome-section">
+      <h2>Welcome to Our Site!</h2>
+      <p>
+        We are glad to have you here. We hope that you will like our welcome
+        section
+      </p>
+      <div>
+        <img src="assests/JSWW.avif" alt="Welcome" />
+      </div>
+    </div>
+
+    <div class="work-section">
+      <h2>Our Work</h2>
+      <p>Here are some examples of what we do:</p>
+      <b>Want to learn JavaScript</b>
+      <div id="div1"></div>
+      <b>How to learn JavaScript?</b>
+      <div id="div2"></div>
+      <b>Techiques you need to know to learn JavaScript</b>
+      <div id="div3"></div>
+    </div>
+
     <script>
-        //If statement checking for if a number is gretaer than 10 or not
-        let number=15;
-        if(number>10){
-            console.log("The number is greater then 10");
+      function showElement(className) {
+        const elements = document.getElementsByClassName(className);
+        for (let i = 0; i < elements.length; i++) {
+          elements[i].style.display = "block";
         }
-        console.log("You are outside the if block");
+      }
 
-        //If-else statement check that if a number is even or odd
-        let num=8;
-        if(num%2==0){
-            console.log(`The number ${num} is a Even Number`);
+      function hideElement(className) {
+        const elements = document.getElementsByClassName(className);
+        for (let i = 0; i < elements.length; i++) {
+          elements[i].style.display = "none";
         }
-        else{
-            console.log(`The number ${num} is a Odd Numbe`);
-        }
-        console.log("You are outside the if block");
+      }
 
-        //if-if-else-else statement checking that if a candidate is eligible to vote or not
-        let age=18;
-        if(age==18){
-            console.log("The candidate can vote");
-        }
-        else if(age>18){
-            console.log("The candiadte can vote");
-        }
-        else{
-            console.log("The candidate is not vote");
-        }
-        console.log("You are outside the block");
+      document.getElementById("showWelcome").addEventListener("click", () => {
+        showElement("welcome-section");
+      });
 
-        //Ternary Operators----checking for the correction of number
-        let input=20;
-        let output= input>=20?"The number is correct":"The number is incorrect";
-        console.log(`The number ${input} is correct`);
+      document.getElementById("hideWelcome").addEventListener("click", () => {
+        hideElement("welcome-section");
+      });
+
+      document.getElementById("showPictures").addEventListener("click", () => {
+        showElement("work-section");
+      });
+
+      document.getElementById("hidePictures").addEventListener("click", () => {
+        hideElement("work-section");
+      });
     </script>
-</body>
+  </body>
 </html>
