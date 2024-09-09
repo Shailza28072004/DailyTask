@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Switch Statement</title>
+</head>
+<body>
+    <h1>Learning about JS Switch Statement</h1>
+    <p>Enter  a number :</p>
+    <input type="number" id="number" min="1" max="7">
+    <button onclick="submit()">Submit</button>
+    <script>
+        let input=document.getElementById("number").value;
+        let output;
+        switch (input) {
+            case '1':
+                output='One';
+                break;
+            case '2':
+                output='Two';
+                break;
+            case '3':
+                output='Three';
+                break;
+            case '4':
+                output='Four';
+                break;
+            case '5':
+                output='Five';
+                break;
+            case '6':
+                output='Six';
+                break;
+            case '7':
+                output='Seven';
+                break;
+            default:
+                output='wrong number!Enter a number between 1 to 7 only';
+        }
+        function submit() {
+            let input = document.getElementById('number');
+            console.log(input.value);
+        }
+    </script>
+</body>
+</html>
