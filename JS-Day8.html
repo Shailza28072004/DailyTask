@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        body {
+            font-size: 20px;
+            text-align: center;
+            background-color: #E9EFEC;
+            color: #16423C;
+        }
+        form {
+            background-color: #C4DAD2;
+            width: 400px; 
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: inline-block; 
+        }
+        button {
+            border: none;
+            border-radius: 5px;
+            color: #16423C;
+            background-color: azure;
+            margin: 10px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #E9EFEC;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Enter the following</h2>
+        <form>
+            <label for="number">Enter a number:</label><br>
+            <input type="number" id="number" placeholder="Enter number"><br>
+            <button onclick="output(event)">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        function output(event) {
+            event.preventDefault();
+            let input = document.getElementById("number").value;
+            console.log(input);
+        }
+    </script>
+</body>
+</html>
