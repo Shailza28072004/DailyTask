@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+    <style>
+        body{
+            font-size: 20px;
+            font-family: Georgia;
+            color: #16423C;
+            background-color: #C4DAD2;
+        }
+        #heading{
+            text-align: center;
+            text-decoration: underline;
+            color:#6A9C89;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">Loops in JavaScript</h1>
+    <ol>
+        <li><b>While Loop:
+            <ul type="none">The while loop loops through a block of code as long as a specified condition is true.
+                <pre>
+                    <code>
+                        <b>Syntax-:</b>
+                            while(condition){
+                                //code to execute
+                            }
+                    </code>
+                </pre>
+            </ul>
+        </b></li>
+        <li><b>Do-While Loop:</b>
+            <ul type="none">The do...while statements combo defines a code block to be executed once, and repeated as long as a condition is true.
+             The do...while is used when you want to run a code block at least one time.
+             <pre>
+                <code>
+                    <b>Syntax-:</b>
+                    do{
+                        //code
+                    }
+                    while(condition);
+                </code>
+             </pre>
+            </ul>
+        </li>
+        <li><b>for Loop:
+            <ul type="none">Loops can execute a block of code a number of times.
+                <pre>
+                    <code>
+                        <b>Syntax-:</b>
+                        for(inilization;condition;inc/dec){
+                            //code
+                        }
+                    </code>
+                </pre>
+            </ul>
+        </b></li>
+        <li><b>Nested Loops:</b>
+            <ul type="none">The nested loops means  one loop inside another.</ul>
+        </li>
+    </ol>
+
+    <script>
+        //While Loop  printing hello 5 times 
+        let start=1;
+        while(start<=5){
+            console.log("Hello");
+            start++;
+        }
+
+        //Do-While loop print Javascript when x==3,this will work at least once
+        let start1=1;
+        do{
+            console.log("Javascript");
+        }
+        while(start==3);
+
+        //For loop printing 10 times
+        for(let start2=1;start2<=10;start2++){
+            console.log("Word");
+            
+        }
+    </script>
+</body>
+</html>
