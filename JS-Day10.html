@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Loops</title>
+    <style>
+        body{
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #D0B8A8;
+        }
+        #heading{
+            text-align: center;
+            color: #8D493A;
+        }
+        .headings{
+            color: #603F26;
+        }
+        pre{
+            color: #3F2305;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="heading"><u>Nested Loops in JavaScript</u></h1>
+    </header>
+    <h2 class="headings"><u>Print the following patterns</u></h2>
+    <pre>
+        1.Print the following
+        ****
+        ****
+        ****
+        ****
+        ****
+        2.Print the following
+        *
+        **
+        ***
+        ****
+    </pre>
+    <h3 class="headings"><u>Output-></u></h3>
+    <script>
+        //printing the first pattern
+        document.write("The first output:<br>");
+        for(rows=1;rows<=5;rows++){
+            for(cols=1;cols<=4;cols++){
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+        document.write("<br>");
+        document.write("The second output:<br>");
+        //printing the second pattern
+        for(let row=1;row<=4;row++){
+            for(cols=1;cols<=row;cols++){
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+    </script>
+</body>
+</html>

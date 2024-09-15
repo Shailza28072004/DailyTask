@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #FFF4EA;
+            font-size: 20px;
+        }
+        h1 {
+            color: #C96868;
+            text-align: center;
+            text-shadow: 2px 2px 8px rgba(241, 142, 155, 0.6);
+        }
+        ol {
+            background: #FFDFD6;
+            border: 2px solid #FFA38F;
+            border-radius: 5px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        b {
+            color:  #C75B7A;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+        ul.type-none {
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Array Methods</h1>
+    <ol>
+        <li><b>push()</b>
+            <ul class="type-none">
+                <li>This method is used to add an element to the end of the array. This method changes the length of the array.</li>
+            </ul>
+        </li>
+        <li><b>unshift()</b>
+            <ul class="type-none">
+                <li>The unshift() method is used to add a new item as the first element of the array.</li>
+            </ul>
+        </li>
+        <li><b>pop()</b>
+            <ul class="type-none">
+                <li>This method is used to remove and return the last element of the array.</li>
+            </ul>
+        </li>
+        <li><b>shift()</b>
+            <ul class="type-none">
+                <li>The shift() method is used to remove and return the first element of the array.</li>
+            </ul>
+        </li>
+        <li><b>splice()</b>
+            <ul class="type-none">
+                <li>The splice() method is used to remove or add elements in the array by specifying the index.</li>
+            </ul>
+        </li>
+    </ol>
+    <script>
+        // push Method
+        let number=[1,2,3,4,5];
+        number.push(6);
+        console.log("The numbers are =", number); // Output: 1,2,3,4,5,6
+
+        // unshift()
+        let str=["is","a","String"];
+        str.unshift("This");
+        console.log("output=", str);
+
+        // pop()
+        let num=[27,57,37,47,87];
+        let removedElement=num.pop();
+        console.log(`The pop() method removed ${removedElement}. Remaining array:`, num);
+
+        // shift()
+        let marks=[40,50,44,56,57];
+        let removed=marks.shift();
+        console.log(`The removed element is ${removed}. The shift method will return array as ${marks}`);
+
+        // splice()
+        // Adding element
+        let arr=[11,22,33,44,55];
+        arr.splice(6, 0, 66); // Index 6, delete count 0, added element 66
+        console.log(`The array after adding is ${arr}`);
+
+        // Removing element
+        arr.splice(1, 1);
+        console.log(`The array after deletion is ${arr}`);
+
+        let array=[1,2,3,4];
+        array.splice(1, 2, 3, 4); // Index 1, delete count 2, items to be added 3 & 4
+        console.log("The array is ", array);
+    </script>
+</body>
+</html>
