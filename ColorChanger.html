@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color Changer</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #heading{
+            font-family: serif;
+            text-align: center;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0; 
+        }
+        #button{
+            margin: 5px;
+            height: 70px;
+            width: 150px;
+            font-size: 16px;
+            color:white;
+            background-color: rgb(214, 139, 151);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #button:hover{
+            background-color: salmon;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">Background Color Changer</h1>
+    <button id="button">Change Color</button>
+    <script src="ColorChanger.js"></script>
+</body>
+</html>

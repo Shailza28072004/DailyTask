@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.maindiv{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: linear-gradient(to right,#1E5128,#4E9F3D);
+}
+.left{
+    width: 40%;
+    /* background-color: gray; */
+}
+.heading{
+    text-align: center;
+    color:#D8E9A8;
+}
+.paragraph1{
+    margin-top: 10px;
+    color: #d1eb8b;
+    text-align: center;
+}
+.photos{
+    width: 50%;
+    display: grid;
+    gap:8px;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 130px; /*fixed height*/
+}
+.box{
+    background-size: cover;
+    background-position: bottom; /*used to show the part of image that you want*/
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(19, 18, 18);
+    background-blend-mode: hard-light;
+    transition: all 1s ease-in-out;
+    box-shadow: 0 0 8px #fff;/*horizontal vertical blurrange color*/ 
+}
+.box:hover{
+    box-shadow: 0 0 8px #333232;
+    background-position: center;
+    background-color: rgb(134, 124, 124);
+}
+#box1,#box4{
+    grid-row: span 2;/*this will take the sapce of two columns*/
+}
+#box2,#box5,#box7{
+    grid-column: span 2;
+}
